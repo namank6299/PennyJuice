@@ -82,7 +82,7 @@
         position: absolute;
         width: 100%;
         height: calc(100vh - 128px);
-        background: url(img/pn-juice-home-bg.jpg);
+        background: url(../img/pn-juice-home-bg.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
