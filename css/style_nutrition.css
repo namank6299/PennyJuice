@@ -1,0 +1,60 @@
+.top-left-container,
+.bottom-left-container {
+    display: flex;
+}
+
+.pe-md-7 {
+    margin-block-start: calc(6% + 2rem);
+}
+
+.pe-md-7 .nutrition-para {
+    margin-block-start: calc(6% + 2rem);
+}
+
+.col-md-6.order-md-2.mb-10.mb-md-0 {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    img.device-browser-img {
+        width: 86%;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width: 768px) {
+
+    .top-left-container,
+    .bottom-left-container {
+        flex-direction: column;
+    }
+
+    .mt-5 p.fs-4,
+    .mb-5 .fs-4 {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    h2.text-align {
+        text-align: center;
+    }
+}
+
+/*for nutrition container only under 481px*/
+@media screen and (max-width: 481px) {
+    .top-left-container,
+    .bottom-left-container {
+        flex-direction: column;
+    }
+
+    img.device-browser-img {
+        width: 90%;
+    }
+
+    .col-md-6 {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+}

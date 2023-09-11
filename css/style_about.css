@@ -1,0 +1,22 @@
+section.testimony{
+    margin: 3rem auto;
+    width: 70%;
+}
+
+span.circle{
+    width: 25%;
+    height: 120px;
+    margin-inline-start: 100px;
+}
+
+@media screen and (max-width: 768px) {
+    section.testimony {
+        width: 82%;
+    }
+
+    span.circle {
+        width: 48%;
+        height: 88px;
+        margin-inline-start: 16px;
+    } 
+}
