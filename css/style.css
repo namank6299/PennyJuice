@@ -1069,6 +1069,10 @@
 
     /*It encompasses all the various sections*/
     @media screen and (max-width: 481px) {
+        .img-box{
+            width: 82%;
+            margin: 0 auto;
+        }
         .col-lg-6 {
             width: 100%;
             margin-inline-start: revert;
