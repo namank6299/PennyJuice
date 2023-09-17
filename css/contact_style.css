@@ -19,6 +19,7 @@ p.fs-4 .nav-link{
 .col-12 textarea{
     width: 100%;
     padding: 11px ;
+   
 }
 
 @media screen and (max-width: 768px) {
