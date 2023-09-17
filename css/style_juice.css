@@ -180,7 +180,7 @@ span.circle {
 }
 
 .tmnl-items .img-container img {
-    width: 90%;
+    width: 70%;
 }
 
 .mt-center{
@@ -191,12 +191,35 @@ span.circle {
     margin-block-start: calc(1% + 0.4rem);
 }
 
+.col:hover{
+    transform: translatey(-4px);
+    transition: 0.2s;
+}
+
+input#flavour {
+    text-align: center;
+}
+
+form.form-tj{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 12px;
+}
+
+form.form-tj button{
+    width: 60%;
+}
 
 
 
 
 
-
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .tmnl-items .img-container img {
+        width: 86%;
+    }
+}
 
 @media screen and (min-width: 992px) {
     p.juice-para {
@@ -239,6 +262,10 @@ span.circle {
     .tmnl-items .img-container {
         width: 45%;
     }
+
+    .tmnl-items .img-container img {
+        width: 80%;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -271,6 +298,10 @@ span.circle {
 
     .mt-center{
         margin-bottom: 3rem;
+    }
+
+    span.search-heading img.curve-wave{
+        display: none;
     }
 
 
