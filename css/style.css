@@ -81,7 +81,8 @@
         content: "";
         position: absolute;
         width: 100%;
-        height: calc(100vh - 128px);
+        /*height: calc(100vh - 128px);*/
+        min-height: 100vh;
         background: url(../img/pn-juice-home-bg.jpg);
         background-repeat: no-repeat;
         background-position: center;
@@ -95,7 +96,7 @@
     }
 
     h1.display-5.mb-5.fw-bold.text-body-emphasis.lh-1.mb-3.cstm-h1 {
-        width: calc(100% + 3rem);
+        width: calc(100% + 2rem);
     }
 
     .img-box {
@@ -303,7 +304,7 @@
         position: relative;
     }
 
-    #des-bx-1::before {
+    /*#des-bx-1::before {
         content: "";
         width: 25%;
         height: 3px;
@@ -311,9 +312,20 @@
         background-color: #c1651a;
         left: 100%;
         top: 0;
+    }*/
+
+    #des-bx-1::before {
+        content: "";
+        /* width: 25%; */
+        width: 3rem;
+        height: 3px;
+        position: absolute;
+        background-color: #c1651a;
+        left: 100%;
+        top: 0;
     }
 
-    #des-bx-2::before {
+    /*#des-bx-2::before {
         content: "";
         width: 25%;
         height: 3px;
@@ -321,9 +333,21 @@
         background-color: #c1651a;
         left: 100%;
         bottom: 0;
+    }*/
+
+    #des-bx-2::before {
+        content: "";
+        /* width: 25%; */
+        width: 3rem;
+        height: 3px;
+        position: absolute;
+        background-color: #c1651a;
+        left: 100%;
+        bottom: 0;
+        right: calc(0 - 2.5rem);
     }
 
-    #des-bx-3::before {
+    /*#des-bx-3::before {
         content: "";
         width: 25%;
         height: 3px;
@@ -332,9 +356,20 @@
         left: 87%;
         top: calc(100% + 1.12rem);
         transform: rotate(90deg);
+    }*/
+
+    #des-bx-3::before {
+        content: "";
+        width: 2.8rem;
+        height: 3px;
+        position: absolute;
+        background-color: #c1651a;
+        right: -21px;
+        bottom: -24px;
+        transform: rotate(90deg);
     }
 
-    #des-bx-5::before {
+    /*#des-bx-5::before {
         content: "";
         width: 25%;
         height: 3px;
@@ -342,9 +377,19 @@
         background-color: #c1651a;
         right: 100%;
         top: 0;
+    }*/
+
+    #des-bx-5::before {
+        content: "";
+        width: 3rem;
+        height: 3px;
+        position: absolute;
+        background-color: #c1651a;
+        right: 100%;
+        top: 0;
     }
 
-    #des-bx-4::before {
+    /*#des-bx-4::before {
         content: "";
         width: 25%;
         height: 3px;
@@ -352,6 +397,17 @@
         background-color: #c1651a;
         right: 86%;
         top: calc(100% + 1.12rem);
+        transform: rotate(90deg);
+    }*/
+
+    #des-bx-4::before {
+        content: "";
+        width: 2.69rem;
+        height: 3px;
+        position: absolute;
+        background-color: #c1651a;
+        left: -20px;
+        bottom: -23px;
         transform: rotate(90deg);
     }
 
@@ -484,13 +540,34 @@
         align-items: center;
     }
 
+    .subscribe-hm svg{
+        fill: black;
+        margin-left: 6px;
+    }
+
+    span.search-heading{
+        position: relative;
+    }
+
+    span.search-heading .curve-wave {
+        position: absolute;
+        top: 22px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    input#subscriber-email {
+        text-align: center;
+    }
+
     form.subscription-form.position-relative.validate {
         width: 35%;
     }
 
-    input.form-control.form-control-lg {
+    /*input.form-control.form-control-lg {
         text-align: center;
-    }
+    }*/
 
     button.btn.btn-primary.shadow-primary.btn-lg {
         margin-top: 8px;
@@ -617,7 +694,7 @@
 
 
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
 
         .top-left {
             display: flex;
@@ -669,6 +746,10 @@
         form.subscription-form.position-relative.validate {
             width: initial;
         }
+
+        .subscribe-hm svg{
+            display: none;
+        }
     }
 
 
@@ -712,6 +793,10 @@
 
         footer h3:before {
             width: calc(100% + 3rem);
+        }
+
+        .nav-item:last-child{
+            margin-left: 0px;
         }
 
     }
@@ -870,11 +955,19 @@
             grid-column-end: inherit;
         }
 
-        #des-bx-2::before {
+        /*#des-bx-2::before {
             width: 21%;
             left: 89%;
             transform: rotate(90deg);
             bottom: -1.12em;
+        }*/
+
+        #des-bx-2::before {
+            transform: rotate(90deg);
+            width: 2.5rem;
+            bottom: -22px;
+            right: -18px;
+            left: initial;
         }
 
         #des-bx-3 {
@@ -885,12 +978,21 @@
             border-bottom-right-radius: 20px;
         }
 
+        /*#des-bx-3::before {
+            left: inherit;
+            top: inherit;
+            transform: none;
+            right: 100%;
+            bottom: 0;
+        }*/
+
         #des-bx-3::before {
             left: inherit;
             top: inherit;
             transform: none;
             right: 100%;
             bottom: 0;
+            width: 3rem;
         }
 
         #des-bx-4 {
@@ -902,11 +1004,19 @@
             border-top-left-radius: revert;
         }
 
+        /*#des-bx-4::before {
+            bottom: 0;
+            left: 100%;
+            transform: none;
+            top: revert;
+        }*/
+
         #des-bx-4::before {
             bottom: 0;
             left: 100%;
             transform: none;
             top: revert;
+            width: 3rem;
         }
 
         .vs-txt-item:nth-child(5) {
@@ -915,13 +1025,22 @@
             border-bottom-left-radius: unset;
         }
 
-        #des-bx-5::before {
+        /*#des-bx-5::before {
             width: 21%;
             transform: rotate(90deg);
             right: calc(0 - 22px);
             right: 89%;
             bottom: -1.12em;
             top: inherit;
+        }*/
+
+        #des-bx-5::before {
+            width: 21%;
+            transform: rotate(90deg);
+            bottom: -22px;
+            top: inherit;
+            width: 2.5rem;
+            left: -18px;
         }
 
         #des-bx-6 {
@@ -933,6 +1052,8 @@
             width: 75%;
             margin: 0 auto;
         }
+
+
     }
 
 
@@ -1022,11 +1143,19 @@
             border-bottom-right-radius: initial;
         }
 
-        #des-bx-1::before {
+        /*#des-bx-1::before {
             transform: rotate(90deg);
             width: 2em;
             top: revert;
             bottom: calc(-21% - 11px);
+            left: -18px;
+        }*/
+
+        #des-bx-1::before {
+            transform: rotate(90deg);
+            top: revert;
+            width: 2.5rem;
+            bottom: -21px;
             left: -18px;
         }
 
@@ -1034,12 +1163,21 @@
             border-top-right-radius: initial;
         }
 
-        #des-bx-2::before {
+        /*#des-bx-2::before {
             transform: rotate(90deg);
             left: inherit;
             bottom: inherit;
             width: 2em;
             bottom: calc(-66% + 11px);
+            right: -18px;
+        }*/
+
+        #des-bx-2::before {
+            transform: rotate(90deg);
+            left: inherit;
+            bottom: inherit;
+            width: 2.5rem;
+            bottom: -21px;
             right: -18px;
         }
 
@@ -1048,11 +1186,19 @@
             border-bottom-right-radius: 20px;
         }
 
-        #des-bx-3::before {
+        /*#des-bx-3::before {
             transform: rotate(90deg);
             width: 2em;
             top: revert;
             bottom: calc(-21% - 11px);
+            left: -18px;
+        }*/
+
+        #des-bx-3::before {
+            transform: rotate(90deg);
+            width: 2.5rem;
+            top: revert;
+            bottom: -21px;
             left: -18px;
         }
 
@@ -1062,11 +1208,19 @@
             order: 5;
         }
 
-        #des-bx-4::before {
+        /*#des-bx-4::before {
             transform: rotate(90deg);
             width: 2em;
             top: revert;
             bottom: calc(-21% - 11px);
+            left: -18px;
+        }*/
+
+        #des-bx-4::before {
+            transform: rotate(90deg);
+            width: 2.5rem;
+            top: revert;
+            bottom: -21px;
             left: -18px;
         }
 
@@ -1074,12 +1228,21 @@
             border-bottom-right-radius: revert;
         }
 
-        #des-bx-5::before {
+        /*#des-bx-5::before {
             transform: rotate(90deg);
             left: inherit;
             top: inherit;
             width: 2em;
             bottom: calc(-66% + 11px);
+            right: -18px;
+        }*/
+
+        #des-bx-5::before {
+            transform: rotate(90deg);
+            left: inherit;
+            top: inherit;
+            width: 2.5rem;
+            bottom: -21px;
             right: -18px;
         }
 
