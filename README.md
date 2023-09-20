@@ -1,3 +1,3 @@
 # PennyJuice
 
-https://mellifluous-palmier-330f7b.netlify.app/
+Explore it live   [https://mellifluous-palmier-330f7b.netlify.app/]
