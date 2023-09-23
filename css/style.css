@@ -899,11 +899,6 @@
 
     }
 
-@media screen and (max-width: 768px)
-img.curve-wave {
-    display: none;
-}
-
 
     /*it is just to  manage image placed at top most of the web page */
     @media screen and (min-width: 481px) and (max-width: 600px) {
