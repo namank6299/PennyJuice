@@ -1,6 +1,14 @@
 # PennyJuice
-## Overview:  
-- A visually appealing and user-friendly front-end design for a juice website, offering a seamless experience across various devices.
-- Sections such as Home, Juices, Nutrition, About, and Contact Us are thoughtfully crafted, ensuring easy navigation and access to relevant information.
-- Responsive interface design ensures optimal viewing and interaction experience, enhancing accessibility for all users.
+This is a front-end interface for a juice website, featuring a multi-page layout for different sections, responsive design across all devices, seamless navigation, and a thoughtfully crafted, visually appealing, and attractive interface.  
+## Technologies Used  
+- **HTML**  
+- **CSS**
+- **Bootstrap  
+- **JavaScript (basic)**  
+
+## Key Highlights  
+- Developed interfaces emphasizing user-centric design principles.  
+- Ensured **complete responsiveness** across devices.  
+- Achieved **seamless navigation** for enhanced user experience.  
+- Crafted **thoughtfully designed user interfaces** with attention to detail.  
 Explore it live   [https://mellifluous-palmier-330f7b.netlify.app/]
