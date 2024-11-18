@@ -3,7 +3,7 @@ This is a front-end interface for a juice website, featuring a multi-page layout
 ## Technologies Used  
 - **HTML**  
 - **CSS**
-- **Bootstrap  
+- **Bootstrap**  
 - **JavaScript (basic)**  
 
 ## Key Highlights  
